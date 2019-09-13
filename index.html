@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitcoin Price</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div id="container">
+        <div id="overlay"></div>
+        <h1>Bitcoin Current Price is:</h1>
+   
+        <div  class="priceWrap"><span id="price"></span></div>
+        <div  id="currency-options">
+            <div id="options-wrapper">
+                <input type="radio" name="currency"  id="usd" value="USD" checked>
+                <label for="usd">US Dollar</label><br>
+                <input type="radio" name="currency" id="eur" value="EUR">
+                <label for="eur">Euro Dollar</label><br>
+                <input type="radio" name="currency" id="gbp" value="GBP">
+                <label for="gbp">British Pounds</label>
+                <div class="refresh">
+                    <input type="checkbox" name="refresh" id="refresh" checked>
+                    <label for="refresh" >Auto refresh <span id="timer"></span></label>
+                </div>
+
+               
+            </div>                     
+        </div>
+    </div>
+    <script type="text/javascript" src="script.js"></script>   
+</body>
+</html>
